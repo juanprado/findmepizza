@@ -130,6 +130,10 @@ IM_PROTO.soundEffects = (function() {
         {
             "type": "sample",
             "sample": "/assets/samples/pizza.wav"
+        },
+        {
+            "type": "sample",
+            "sample": "/assets/samples/trombone.wav"
         }
     ];
 
@@ -166,9 +170,10 @@ IM_PROTO.soundEffects = (function() {
         self.buffers = buffers;
     }
 
-	function playSound() {
-		var time = 0,
-			asset = self.buffers[0];
+	function playSound(error) {
+		var time = 0;
+
+		var asset = (error) ? self.buffers[1] : self.buffers[0];
 
 		console.log(asset, 'asset');
 
