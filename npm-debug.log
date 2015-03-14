@@ -1,0 +1,68 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/share/npm/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt-contrib-usemin',
+1 verbose cli   '--save' ]
+2 info using npm@1.3.11
+3 info using node@v0.10.29
+4 warn package.json tr-global-strategy@0.0.1 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'grunt-contrib-usemin', null ]
+7 verbose cache add name=undefined spec="grunt-contrib-usemin" args=["grunt-contrib-usemin",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'grunt-contrib-usemin',
+8 verbose parsed url   path: 'grunt-contrib-usemin',
+8 verbose parsed url   href: 'grunt-contrib-usemin' }
+9 silly lockFile f50114b8-grunt-contrib-usemin grunt-contrib-usemin
+10 verbose lock grunt-contrib-usemin /Users/jprado/.npm/f50114b8-grunt-contrib-usemin.lock
+11 silly lockFile f50114b8-grunt-contrib-usemin grunt-contrib-usemin
+12 silly lockFile f50114b8-grunt-contrib-usemin grunt-contrib-usemin
+13 verbose addNamed [ 'grunt-contrib-usemin', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile dde8decd-grunt-contrib-usemin grunt-contrib-usemin@
+16 verbose lock grunt-contrib-usemin@ /Users/jprado/.npm/dde8decd-grunt-contrib-usemin.lock
+17 silly addNameRange { name: 'grunt-contrib-usemin', range: '*', hasData: false }
+18 verbose url raw grunt-contrib-usemin
+19 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-usemin' ]
+20 verbose url resolved https://registry.npmjs.org/grunt-contrib-usemin
+21 info trying registry request attempt 1 at 16:16:27
+22 http GET https://registry.npmjs.org/grunt-contrib-usemin
+23 http 404 https://registry.npmjs.org/grunt-contrib-usemin
+24 silly registry.get cb [ 404,
+24 silly registry.get   { date: 'Thu, 29 Jan 2015 21:16:31 GMT',
+24 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly registry.get     'content-type': 'application/json',
+24 silly registry.get     'cache-control': 'max-age=0',
+24 silly registry.get     'content-length': '52',
+24 silly registry.get     'accept-ranges': 'bytes',
+24 silly registry.get     via: '1.1 varnish',
+24 silly registry.get     age: '0',
+24 silly registry.get     'x-served-by': 'cache-iad2139-IAD',
+24 silly registry.get     'x-cache': 'MISS',
+24 silly registry.get     'x-cache-hits': '0',
+24 silly registry.get     'x-timer': 'S1422566191.881476,VS0,VE56',
+24 silly registry.get     'keep-alive': 'timeout=10, max=50',
+24 silly registry.get     connection: 'Keep-Alive' } ]
+25 silly lockFile dde8decd-grunt-contrib-usemin grunt-contrib-usemin@
+26 silly lockFile dde8decd-grunt-contrib-usemin grunt-contrib-usemin@
+27 error 404 'grunt-contrib-usemin' is not in the npm registry.
+27 error 404 You should bug the author to publish it
+27 error 404
+27 error 404 Note that you can also install from a
+27 error 404 tarball, folder, or http url, or git url.
+28 error System Darwin 13.4.0
+29 error command "node" "/usr/local/share/npm/bin/npm" "install" "grunt-contrib-usemin" "--save"
+30 error cwd /Users/jprado/dev/tr-global-strategy
+31 error node -v v0.10.29
+32 error npm -v 1.3.11
+33 error code E404
+34 verbose exit [ 1, true ]
