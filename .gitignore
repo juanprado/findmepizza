@@ -5,4 +5,4 @@ node_modules
 dest
 src/assets/vendor
 npm-debug.log
-node_modules
+node_modules/
