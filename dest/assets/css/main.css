@@ -598,16 +598,33 @@ button {
 .location-list {
   margin-top: 20px;
 }
+/* line 116, ../../../src/assets/sass/main.scss */
+.location-list > li {
+  list-style-type: none;
+  margin-bottom: 2%;
+  border: 1px solid #BD4932;
+  padding: 5%;
+  border-radius: 2px;
+}
+/* line 125, ../../../src/assets/sass/main.scss */
+.location-list > li ul li:first-child {
+  font-weight: bold;
+}
+
+/* line 134, ../../../src/assets/sass/main.scss */
+a[href^="tel:"] {
+  color: #ff860d;
+}
 
 @media (max-width: 700px) {
-  /* line 117, ../../../src/assets/sass/main.scss */
+  /* line 138, ../../../src/assets/sass/main.scss */
   label,
   input[type=text],
   input[type=num] {
     font-size: 7vw;
   }
 
-  /* line 122, ../../../src/assets/sass/main.scss */
+  /* line 143, ../../../src/assets/sass/main.scss */
   button {
     font-size: 30px;
     width: 100%;
