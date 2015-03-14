@@ -18,7 +18,6 @@ IM_PROTO.getPizza = (function($) {
 
 	function onGoClick() {
 		event.preventDefault();
-		IM_PROTO.soundEffects.play();
 		getCounts();
 		getPizzaPlaces();
 	}
@@ -70,12 +69,14 @@ IM_PROTO.getPizza = (function($) {
 			dataType: 'JSONP',
 			url: 'http://piapi.herokuapp.com/api',
 			success: function(resp) {
+				IM_PROTO.soundEffects.play();
 				$('form').hide();
 				$('.results').show();
 				populateList(resp.places);
 			},
 			error: function() {
-
+				IM_PROTO.soundEffects.play(true);
+				alert('NO PIZZA FOR YOU');
 			}
 		});
 	}
@@ -83,7 +84,7 @@ IM_PROTO.getPizza = (function($) {
 	function populateList(data) {
 		var $location = $('.location-list');
 		for(var i  = 0; i< data.length; i++) {
-			$locaion.append('<li><ul><li>'+data[i].name+'</li><li>'+data[i].address+'</li><li>'+data[i].phone+'</li>');
+			$location.append('<li><ul><li>'+data[i].name+'</li><li>'+data[i].address+'</li><li>'+data[i].phone+'</li>');
 		}
 	}
 
