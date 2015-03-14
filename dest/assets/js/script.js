@@ -84,7 +84,7 @@ IM_PROTO.getPizza = (function($) {
 	function populateList(data) {
 		var $location = $('.location-list');
 		for(var i  = 0; i< data.length; i++) {
-			$location.append('<li><ul><li>'+data[i].name+'</li><li>'+data[i].address+'</li><li>'+data[i].phone+'</li>');
+			$location.append('<li><ul><li>'+data[i].name+'</li><li>'+data[i].address+'</li><li>'+'<a href="tel:' + data[i].phone+'">' + data[i].phone+'</a></li>');
 		}
 	}
 
