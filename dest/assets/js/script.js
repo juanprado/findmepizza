@@ -1,7 +1,7 @@
 var IM_PROTO = IM_PROTO || {};
 
 
-IM_PROTO.getPizza = (function() {
+IM_PROTO.getPizza = (function($) {
 
 	function getCounts() {
 		var people = document.getElementById('personCount').value,
@@ -19,6 +19,7 @@ IM_PROTO.getPizza = (function() {
 	function onGoClick() {
 		event.preventDefault();
 		getCounts();
+		getPizzaPlaces();
 	}
 
 	function howManyPizzas(slices, people, isNYC) {
@@ -60,11 +61,25 @@ IM_PROTO.getPizza = (function() {
 		return pi * (z * z) * a; // get it?
 	}
 
+	function getPizzaPlaces() {
+		$.ajax({
+			type: 'GET',
+			dataType: 'jsonp',
+			url: 'http://piapi.herokuapp.com/api/mock',
+			success: function(resp) {
+
+			},
+			error: function() {
+
+			}
+		});
+	}
+
 	return {
 		init: init
 	};
 
-})();
+})(jQuery);
 
 IM_PROTO.getPizza.init();
 
