@@ -543,10 +543,25 @@ button {
 }
 
 /* line 69, ../../../src/assets/sass/main.scss */
+.reset {
+  padding: 10px 22px;
+  background: gray;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  float: right;
+}
+
+/* line 82, ../../../src/assets/sass/main.scss */
 .person {
   position: relative;
 }
-/* line 72, ../../../src/assets/sass/main.scss */
+/* line 85, ../../../src/assets/sass/main.scss */
 .person:before {
   content: "";
   background: url("/assets/img/person.png") 50% 0 no-repeat;
@@ -557,11 +572,11 @@ button {
   width: 30%;
 }
 
-/* line 82, ../../../src/assets/sass/main.scss */
+/* line 95, ../../../src/assets/sass/main.scss */
 .slice {
   position: relative;
 }
-/* line 85, ../../../src/assets/sass/main.scss */
+/* line 98, ../../../src/assets/sass/main.scss */
 .slice:before {
   content: "";
   background: url("/assets/img/pizza_slice.png") 50% 0 no-repeat;
@@ -572,12 +587,12 @@ button {
   width: 30%;
 }
 
-/* line 95, ../../../src/assets/sass/main.scss */
+/* line 108, ../../../src/assets/sass/main.scss */
 .pie-size {
   background: #BD4932;
   overflow: hidden;
 }
-/* line 99, ../../../src/assets/sass/main.scss */
+/* line 112, ../../../src/assets/sass/main.scss */
 .pie-size li {
   list-style-type: none;
   float: left;
@@ -589,17 +604,17 @@ button {
   font-size: 20px;
 }
 
-/* line 110, ../../../src/assets/sass/main.scss */
+/* line 123, ../../../src/assets/sass/main.scss */
 .results {
   display: none;
 }
 
-/* line 113, ../../../src/assets/sass/main.scss */
+/* line 126, ../../../src/assets/sass/main.scss */
 .location-list {
   margin-top: 20px;
   padding-left: 0;
 }
-/* line 117, ../../../src/assets/sass/main.scss */
+/* line 130, ../../../src/assets/sass/main.scss */
 .location-list > li {
   list-style-type: none;
   margin-bottom: 2%;
@@ -607,32 +622,32 @@ button {
   padding: 5%;
   border-radius: 2px;
 }
-/* line 126, ../../../src/assets/sass/main.scss */
+/* line 139, ../../../src/assets/sass/main.scss */
 .location-list > li ul li:first-child {
   font-weight: bold;
 }
 
-/* line 135, ../../../src/assets/sass/main.scss */
+/* line 148, ../../../src/assets/sass/main.scss */
 a[href^="tel:"] {
   color: #ff860d;
 }
 
 @media (max-width: 700px) {
-  /* line 139, ../../../src/assets/sass/main.scss */
+  /* line 152, ../../../src/assets/sass/main.scss */
   label,
   input[type=text],
   input[type=num] {
     font-size: 7vw;
   }
 
-  /* line 144, ../../../src/assets/sass/main.scss */
+  /* line 157, ../../../src/assets/sass/main.scss */
   button {
     font-size: 30px;
     width: 100%;
     margin-left: 0;
   }
 
-  /* line 149, ../../../src/assets/sass/main.scss */
+  /* line 162, ../../../src/assets/sass/main.scss */
   section {
     padding: 4%;
   }

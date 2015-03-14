@@ -66,6 +66,19 @@ button {
 	text-transform: uppercase;
 	margin-left: 53%;
 }
+.reset {
+	padding: 10px 22px;
+	background: gray;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 20px;
+	cursor: pointer;
+	display: block;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	float: right;
+}
 .person {
 	position: relative;
 
