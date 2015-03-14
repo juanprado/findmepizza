@@ -2,6 +2,7 @@
 .sass-cache
 node_modules
 .grunt
+dest/
 dest
 src/assets/vendor
 npm-debug.log
