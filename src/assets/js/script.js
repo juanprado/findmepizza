@@ -18,6 +18,7 @@ IM_PROTO.getPizza = (function($) {
 
 	function onGoClick() {
 		event.preventDefault();
+		IM_PROTO.soundEffects.play();
 		getCounts();
 		getPizzaPlaces();
 	}
@@ -50,7 +51,9 @@ IM_PROTO.getPizza = (function($) {
 			}
 		}
 
-		console.log(mediumPizzas, largePizzas, extraLargePizzas);
+		$('.medium-pie span').text(mediumPizzas);
+		$('.large-pie span').text(largePizzas);
+		$('.xlarge-pie span').text(extraLargePizzas);
 	}
 
 	function getPizzaArea(diameter) {
@@ -64,15 +67,24 @@ IM_PROTO.getPizza = (function($) {
 	function getPizzaPlaces() {
 		$.ajax({
 			type: 'GET',
-			dataType: 'jsonp',
-			url: 'http://piapi.herokuapp.com/api/mock',
+			dataType: 'JSONP',
+			url: 'http://piapi.herokuapp.com/api',
 			success: function(resp) {
-
+				$('form').hide();
+				$('.results').show();
+				populateList(resp.places);
 			},
 			error: function() {
 
 			}
 		});
+	}
+
+	function populateList(data) {
+		var $location = $('.location-list');
+		for(var i  = 0; i< data.length; i++) {
+			$locaion.append('<li><ul><li>'+data[i].name+'</li><li>'+data[i].address+'</li><li>'+data[i].phone+'</li>');
+		}
 	}
 
 	return {
