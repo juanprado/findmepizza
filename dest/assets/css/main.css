@@ -631,6 +631,11 @@ a[href^="tel:"] {
     width: 100%;
     margin-left: 0;
   }
+
+  /* line 149, ../../../src/assets/sass/main.scss */
+  section {
+    padding: 4%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
