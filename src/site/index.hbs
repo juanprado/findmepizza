@@ -1,5 +1,17 @@
 ---
-title: 'Investment Management'
+title: 'Find Me Pizza'
 ---
 
-<h1>Launch Page</h1>
+<section>
+	<form method="POST" action="/findmepizza" id="form">
+		<fieldset>
+			<label for="personCount">How many people?</label>
+			<input type="num" placeholder="" name="personCount" id="personCount" value="1">
+		</fieldset>
+		<fieldset>
+			<label for="sliceCount">How many slices?</label>
+			<input type="num" placeholder="" name="sliceCount" id="sliceCount" value="2">
+		</fieldset>
+		<button type="submit" id="submitForm">Go</button>
+	</form>
+</section>

@@ -3,13 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BNY MELLON: Investment Management</title>
+  <title>Find Me Pizza</title>
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
 </head>
 <body>
   
 
-<h1>Launch Page</h1>
+<section>
+	<form method="POST" action="/findmepizza" id="form">
+		<fieldset>
+			<label for="personCount">How many people?</label>
+			<input type="num" placeholder="" name="personCount" id="personCount" value="1">
+		</fieldset>
+		<fieldset>
+			<label for="sliceCount">How many slices?</label>
+			<input type="num" placeholder="" name="sliceCount" id="sliceCount" value="2">
+		</fieldset>
+		<button type="submit" id="submitForm">Go</button>
+	</form>
+</section>
   <!-- build:js /assets/js/script.js -->
   <script src="/assets/js/script.js"></script>
   <script src="/assets/js/sound-effects.js"></script>
