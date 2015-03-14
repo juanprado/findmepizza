@@ -3,8 +3,25 @@ var IM_PROTO = IM_PROTO || {};
 
 IM_PROTO.getPizza = (function() {
 
-	function howManyPizzas(slices, people, isNYC) {
+	function getCounts() {
+		var people = document.getElementById('personCount').value,
+				slices = document.getElementById('sliceCount').value;
 
+		howManyPizzas(slices, people, true);
+	}
+
+	function init() {
+		var $button = document.getElementById('submitForm');
+
+		$button.addEventListener('click', onGoClick);
+	}
+
+	function onGoClick() {
+		event.preventDefault();
+		getCounts();
+	}
+
+	function howManyPizzas(slices, people, isNYC) {
 		var averagePizzaSlice = isNYC ? 31.75 : 15, //area measured in square inches
 				num = slices * people, // get the number of slices
 				requiredPizza = averagePizzaSlice * num, // area of required pizza
@@ -31,6 +48,8 @@ IM_PROTO.getPizza = (function() {
 				requiredPizza = requiredPizza - extraLargePizza;
 			}
 		}
+
+		console.log(mediumPizzas, largePizzas, extraLargePizzas);
 	}
 
 	function getPizzaArea(diameter) {
@@ -42,8 +61,10 @@ IM_PROTO.getPizza = (function() {
 	}
 
 	return {
-		play: playSound
+		init: init
 	};
 
 })();
+
+IM_PROTO.getPizza.init();
 
