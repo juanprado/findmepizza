@@ -129,7 +129,7 @@ IM_PROTO.soundEffects = (function() {
 	this.samples = [
         {
             "type": "sample",
-            "sample": "/assets/samples/little_caesar.wav"
+            "sample": "/assets/samples/pizza.wav"
         }
     ];
 
@@ -165,8 +165,6 @@ IM_PROTO.soundEffects = (function() {
         console.log(buffers, 'buufeeeerrr?!?');
         self.buffers = buffers;
     }
-
-
 
 	function playSound() {
 		var time = 0,
