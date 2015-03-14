@@ -590,19 +590,24 @@ button {
 }
 
 /* line 110, ../../../src/assets/sass/main.scss */
+.results {
+  display: none;
+}
+
+/* line 113, ../../../src/assets/sass/main.scss */
 .location-list {
   margin-top: 20px;
 }
 
 @media (max-width: 700px) {
-  /* line 114, ../../../src/assets/sass/main.scss */
+  /* line 117, ../../../src/assets/sass/main.scss */
   label,
   input[type=text],
   input[type=num] {
     font-size: 7vw;
   }
 
-  /* line 119, ../../../src/assets/sass/main.scss */
+  /* line 122, ../../../src/assets/sass/main.scss */
   button {
     font-size: 30px;
     width: 100%;
